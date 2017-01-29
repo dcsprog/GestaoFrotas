@@ -18,8 +18,6 @@ public class Carro extends Combustivel implements IReparacao, ICombustivel{
 		this.marca = marca;
 		this.modelo = modelo;
 		this.matricula = matricula;
-		//this.combustivel = combustivel;
-		//this.peca = peca;
 		this.kmInio = kmInio;
 		this.kmFinal = kmFinal;
 		this.pecaAvariada = pecaAvariada;
