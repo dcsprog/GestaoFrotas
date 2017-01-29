@@ -2,23 +2,18 @@ package model;
 
 public class Reparar extends Carro implements IReparacao, IPeca{
 	
-	public Reparar(){
-		super();
-	}
-	
-	
-	
-	public Reparar(int id_reparacao, String dataTempoInicio, String dataTempoFinal, Peca peca,int id_carro,
-			String marca, String modelo, String matricula, String combustivel, float valorAtestado,
-			float kmInio, float kmFinal, boolean estado) {
-		
-		super(id_carro, marca, modelo, matricula, combustivel, valorAtestado, kmInio, kmFinal, estado);
-		
+
+
+	public Reparar(int id_reparacao, String dataTempoInicio, String dataTempoFinal, Peca peca, int id_carro, String marca, String modelo, String matricula,
+			float kmInio, float kmFinal, String pecaAvariada, boolean estado, int id_combustivel, String nomeCombustivel, float valorAbastecido) {
+		super(id_carro, marca, modelo, matricula, kmInio, kmFinal, pecaAvariada, estado, id_combustivel, nomeCombustivel, valorAbastecido);
 		this.id_reparacao = id_reparacao;
 		this.dataTempoInicio = dataTempoInicio;
 		this.dataTempoFinal = dataTempoFinal;
 		this.peca = peca;
 	}
+
+	
 
 
 	private int id_reparacao;
@@ -73,8 +68,13 @@ public class Reparar extends Carro implements IReparacao, IPeca{
 	public void setPeca(Peca peca) {
 		this.peca = peca;
 	}
-	
-	
-	
+
+
+
+	@Override
+	public void novaPeca() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
