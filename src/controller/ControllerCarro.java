@@ -71,10 +71,5 @@ public class ControllerCarro extends Carro{
 		}
 	}
 	
-	public void pausa(){
-		System.out.println("System pause, pressione enter para continuar...");
-		n.nextLine();
-	}
 	
-
 }

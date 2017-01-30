@@ -43,7 +43,6 @@ public class Principal {
 				break;
 			case 2:
 				ctlCarro.listarCarro();
-				ctlCarro.pausa();
 				break;
 			case 3:
 				System.out.println("O programa vai ser encerrado....\n\n");
