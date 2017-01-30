@@ -1,11 +1,13 @@
 package controller;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Principal {
 	
 	static Scanner n = new Scanner(System.in);
-	
 	static ControllerCarro ctlCarro = new ControllerCarro();
 	
 	static void menuP(){
@@ -23,24 +25,26 @@ public class Principal {
 		
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
-		int opc=0;
-		char a;
+		//BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		int opc;
 		
 		
 		do{
 			
 			menuP();
-			opc = n.nextInt();
+			//opc = Integer.parseInt(reader.readLine());
+			opc=n.nextInt();
+			//n.nextLine();
 			switch(opc){
 			case 1:
-				System.clearProperty("CLS");
 				ctlCarro.registarCarro();
 				break;
 			case 2:
-				System.clearProperty("CLS");
 				ctlCarro.listarCarro();
+				ctlCarro.pausa();
+				break;
 			case 3:
 				System.out.println("O programa vai ser encerrado....\n\n");
 				opc=0;
