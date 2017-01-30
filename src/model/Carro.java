@@ -9,7 +9,7 @@ public class Carro extends Combustivel implements IReparacao, ICombustivel{
 	
 	
 
-	public Carro(int id_carro, String marca, String modelo, String matricula,float kmInio, float kmFinal, String pecaAvariada,
+	public Carro(int id_carro, String marca, String modelo, String matricula,int ano,float kmInio, float kmFinal, String pecaAvariada,
 			boolean estado, int id_combustivel, String nomeCombustivel, float valorAbastecido) {
 		
 		super(id_combustivel, nomeCombustivel, valorAbastecido);
@@ -18,6 +18,7 @@ public class Carro extends Combustivel implements IReparacao, ICombustivel{
 		this.marca = marca;
 		this.modelo = modelo;
 		this.matricula = matricula;
+		this.ano = ano;
 		this.kmInio = kmInio;
 		this.kmFinal = kmFinal;
 		this.pecaAvariada = pecaAvariada;
@@ -31,6 +32,7 @@ public class Carro extends Combustivel implements IReparacao, ICombustivel{
 	private String marca;
 	private String modelo;
 	private String matricula;
+	private int ano;
 	private float kmInio;
 	private float kmFinal;
 	private String pecaAvariada;
@@ -95,6 +97,16 @@ public class Carro extends Combustivel implements IReparacao, ICombustivel{
 	}
 
 
+	public int getAno() {
+		return ano;
+	}
+
+
+
+
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
 
 
 	public float getKmInio() {
@@ -176,5 +188,8 @@ public class Carro extends Combustivel implements IReparacao, ICombustivel{
 		// TODO Auto-generated method stub
 		
 	}
+
+
+
 }
 	

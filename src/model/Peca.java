@@ -10,10 +10,10 @@ public class Peca extends Carro {
 
 
 	public Peca( int id_peca, String nomePeca, String descricaoPeca, float precoPeca, int id_carro, String marca, String modelo,
-			String matricula, float kmInio, float kmFinal, String pecaAvariada, boolean estado, 
+			String matricula,int ano, float kmInio, float kmFinal, String pecaAvariada, boolean estado, 
 			int id_combustivel, String nomeCombustivel, float valorAbastecido) {
 		
-		super(id_carro, marca, modelo, matricula, kmInio, kmFinal, pecaAvariada, estado, id_combustivel, nomeCombustivel, valorAbastecido);
+		super(id_carro, marca, modelo, matricula, ano, kmInio, kmFinal, pecaAvariada, estado, id_combustivel, nomeCombustivel, valorAbastecido);
 		this.id_peca = id_peca;
 		this.nomePeca = nomePeca;
 		this.descricaoPeca = descricaoPeca;

@@ -4,9 +4,9 @@ public class Reparar extends Carro implements IReparacao, IPeca{
 	
 
 
-	public Reparar(int id_reparacao, String dataTempoInicio, String dataTempoFinal, Peca peca, int id_carro, String marca, String modelo, String matricula,
+	public Reparar(int id_reparacao, String dataTempoInicio, String dataTempoFinal, Peca peca, int id_carro, String marca, String modelo, String matricula,int ano,
 			float kmInio, float kmFinal, String pecaAvariada, boolean estado, int id_combustivel, String nomeCombustivel, float valorAbastecido) {
-		super(id_carro, marca, modelo, matricula, kmInio, kmFinal, pecaAvariada, estado, id_combustivel, nomeCombustivel, valorAbastecido);
+		super(id_carro, marca, modelo, matricula, ano, kmInio, kmFinal, pecaAvariada, estado, id_combustivel, nomeCombustivel, valorAbastecido);
 		this.id_reparacao = id_reparacao;
 		this.dataTempoInicio = dataTempoInicio;
 		this.dataTempoFinal = dataTempoFinal;
